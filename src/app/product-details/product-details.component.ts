@@ -23,9 +23,7 @@ export class ProductDetailsComponent {
     const productIdFromRoute = Number(routeParams.get('productId'));
 
     // Find the product that correspond with the id provided in route.
-    this.product = products.find(
-      (product) => product.id === productIdFromRoute
-    );
+    this.product = products.find(product => product.id === productIdFromRoute);
   }
 
   addToCart(product: Product) {
